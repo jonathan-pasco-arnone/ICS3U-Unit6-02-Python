@@ -10,9 +10,9 @@ import random
 def greatest_finder(numbers):
     # This program finds the greatest number in a list of random numbers
 
-    previous_greatest_number = 0
+    previous_greatest_number = numbers[0]
 
-    for loop_counter in range(0, 10):
+    for loop_counter in range(1, 10):
         if previous_greatest_number < numbers[loop_counter]:
             previous_greatest_number = numbers[loop_counter]
     return previous_greatest_number
@@ -22,7 +22,6 @@ def main():
     # This function generates 10 random numbers and displays them
 
     numbers = []
-    sum_of_numbers = 0
 
     print("The following is 10 randomly generated numbers"
           " stored in the same variable.")
